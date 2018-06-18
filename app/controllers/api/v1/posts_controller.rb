@@ -4,6 +4,7 @@ module Api
 
             def index
                 @posts = Post.order('created_at DESC')
+                render json: @posts
             end
             
         end
